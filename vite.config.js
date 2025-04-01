@@ -11,4 +11,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    target: 'esnext', // or 'es2022' to ensure modern JavaScript features like top-level await are supported
+  },
 })
